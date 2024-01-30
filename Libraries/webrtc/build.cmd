@@ -11,8 +11,10 @@ REM cd c:\webrtc\src
 if errorlevel 1 goto :error
 
 echo.
-echo Opening the developer command prompt
+echo Opening the developer Community command prompt
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat" -arch=amd64
+echo OR Opening the developer Enterprise command prompt
+call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat" -arch=amd64
 if errorlevel 1 goto :error
 
 for %%a in (%~1) do (
